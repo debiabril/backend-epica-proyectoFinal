@@ -3,7 +3,7 @@ import morgan from "morgan"
 import cors from 'cors'
 import cookieParser from "cookie-parser"
 import { connectMongo } from './database/db.js'
-import indexRouter from './routes/index.routes.js'
+import iRouter from './routes/index.routes.js'
 
 
 export const app = express()
@@ -14,4 +14,4 @@ app.use(express.json())
 app.use(cookieParser());
 app.use(cors());
 
-app.use(indexRouter) //Esto lo tenes que cambiar o personalizar 
+app.use(iRouter) 
